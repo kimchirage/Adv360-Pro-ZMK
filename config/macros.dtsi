@@ -221,22 +221,25 @@
     #binding-cells = <0>;
     bindings = <&mkp MB1 &mkp MB1>;
     display-name = "Double Click";
-};
-macro_hs1: macro_hs1{
-compatible = "zmk,behavior-macro";
-label = "macro_hs1";
-#binding-cells = <0>;
-bindings = <&kp LS(H)>, <&kp AT>, <&kp L>, <&kp Y>, <&kp LS(S)>, <&kp M>, <&kp AT>, <&kp K>, <&kp E>, <&kp S>, <&kp N1>;
-};
-macro_scwb: macro_scwb{
-compatible = "zmk,behavior-macro";
-label = "macro_scwb";
-#binding-cells = <0>;
-bindings = <&kp LS(S)>, <&kp C>, <&kp H>, <&kp W>, <&kp AT>, <&kp N6>, <&kp N6>, <&kp I>, <&kp E>;
-};
-macro_hc1: macro_hc1{
-compatible = "zmk,behavior-macro";
-label = "macro_hc1";
-#binding-cells = <0>;
-bindings = <&kp LS(H)>, <&kp AT>, <&kp L>, <&kp Y>, <&kp LS(C)>, <&kp AT>, <&kp W>, <&kp N1>;
-};
+  };
+  
+  macro_hs1: macro_hs1{
+	compatible = "zmk,behavior-macro";
+	label = "macro_hs1";
+	#binding-cells = <0>;
+	bindings = <&kp LS(H)>, <&kp AT>, <&kp L>, <&kp Y>, <&kp LS(S)>, <&kp M>, <&kp AT>, <&kp K>, <&kp E>, <&kp S>, <&kp N1>;
+  };
+  
+  macro_scwb: macro_scwb{
+	compatible = "zmk,behavior-macro";
+	label = "macro_scwb";
+	#binding-cells = <0>;
+	bindings = <&kp LS(S)>, <&kp C>, <&kp H>, <&kp W>, <&kp AT>, <&kp N6>, <&kp N6>, <&kp I>, <&kp E>;
+  };
+  
+  macro_hc1: macro_hc1{
+	compatible = "zmk,behavior-macro";
+	label = "macro_hc1";
+	#binding-cells = <0>;
+	bindings = <&kp LS(H)>, <&kp AT>, <&kp L>, <&kp Y>, <&kp LS(C)>, <&kp AT>, <&kp W>, <&kp N1>;
+  };
