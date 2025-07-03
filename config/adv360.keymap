@@ -6,6 +6,16 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/pointing.h>
 
+
+
+#define HYP LS(LC(LA(LGUI)))
+
+#define HYPER(key) LS(LC(LA(LG(key))))
+
+#define CRALS LS(LC(LALT))
+
+
+
 / {
     behaviors {
       #include "macros.dtsi"
@@ -20,6 +30,113 @@
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
       };
+        TD_1: TD_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_1";
+            #binding-cells = <0>;
+            bindings = <&kp N1>, <&kp EXCLAMATION>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD_2: TD_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_2";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_2>, <&kp AT_SIGN>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD_3: TD_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_3";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_3>, <&kp HASH>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD_4: TD_4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_4";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_4>, <&kp DOLLAR>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD_5: TD_5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_5";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_5>, <&kp PERCENT>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD_6: TD_6 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_6";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_6>, <&kp LCTRL>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD_7: TD_7 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_7";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_7>, <&kp AMPERSAND>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD_8: TD_8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_8";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_8>, <&kp ASTERISK>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD_9: TD_9 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_9";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_9>, <&kp LEFT_PARENTHESIS>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD_0: TD_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_0";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_0>, <&kp RIGHT_PARENTHESIS>;
+
+            tapping-term-ms = <300>;
+        };
+
+        SYM_ASTK: SYM_ASTK {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SYM_ASTK";
+            #binding-cells = <0>;
+            bindings = <&kp ASTERISK>, <&kp SLASH>;
+
+            tapping-term-ms = <300>;
+        };
+
+        SYM_UNDER: SYM_UNDER {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SYM_UNDER";
+            #binding-cells = <0>;
+            bindings = <&kp UNDERSCORE>, <&kp BACKSLASH>;
+
+            tapping-term-ms = <300>;
+        };
     };
 
   keymap {
