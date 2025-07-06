@@ -158,7 +158,7 @@
 		display-name = "KeyPad";
             bindings = <
 			&kp EQUAL      &kp EXCL   &kp AT    &kp POUND  &kp DLLR   &kp PRCNT  &trans                                                                            &mo 3        &none       &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_EQUAL     &kp MINUS
-			&kp TAB        &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR   &Win_Copy                                                                         &Win_Cut     &kp PG_UP   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp LS(N9)       &kp LS(N0)
+			&kp TAB        &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR   &Win_Copy                                                                         &Win_Cut     &kp PG_UP   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp N9       &kp N0
 			&mt CRALS ESC  &none      &none     &none      &kp LT     &kp GT     &Win_Paste          &kp LGUI  &kp LALT         &kp RCTRL  &kp SPACE               &Win_Undo    &kp PG_DN   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_MULTIPLY  &kp KP_DIVIDE
 			&kp LSHFT      &none      &none     &kp UP     &kp LBKT   &kp RBKT                                 &mt LSHFT HOME   &kp PG_UP                                       &kp KP_DOT  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_MINUS     &kp RSHFT
 			&tog 2         &none      &kp LEFT  &kp DOWN   &kp RIGHT                        &kp TAB  &kp BSPC  &mt LCTRL END    &kp PG_DN  &kp ENTER   &kp KP_PLUS                          &KP_N0      &kp KP_N0     &kp KP_DOT     &none            &tog 2
